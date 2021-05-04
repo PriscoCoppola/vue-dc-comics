@@ -5,6 +5,8 @@
 
       <main>
         <Content/>
+
+        <Products/>
       </main> 
 
       <Footer/>   
@@ -15,6 +17,7 @@
 <script>
 import Header from './components/Header.vue'
 import Content from './components/Content.vue'
+import Products from './components/Products.vue'
 import Footer from './components/Footer.vue'
 
 export default {
@@ -22,6 +25,7 @@ export default {
   components: {
     Header,
     Content,
+    Products,
     Footer,
   }
 }

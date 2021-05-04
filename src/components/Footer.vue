@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="logo">
-                    <img src="../assets/images/dc-logo-bg.png" alt="">
+                    <img src="../assets/images/dc-logo-bg.png" alt="Logo BG">
                 </div>
             </div>
         </div>
@@ -189,10 +189,6 @@ export default {
 </script>
 
 <style scoped>
-footer {
-
-}
-
 .footer-top {
     background-image: url(../assets/images/footer-bg.jpg);
 }
