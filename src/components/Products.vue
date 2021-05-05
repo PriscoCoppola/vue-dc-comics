@@ -6,7 +6,7 @@
                     v-for="(link, index) in links"
                     :key="index"
                 >
-                    <img src="../assets/images/buy-comics-digital-comics.png" :alt="link.name">
+                    <img :src="link.image" :alt="link.name">
                     <a :href="link.url">{{link.name}}</a>
                 </li>
             </ul>
@@ -23,27 +23,27 @@ export default {
                 {
                     name: 'Digital Comics',
                     url: '/digitalcomics',
-                    image: 'buy-comics-digital-comics'
+                    image:require('../assets/images/buy-comics-digital-comics.png'),
                 },
                 {
                     name: 'DC Merchandise',
                     url: '/dcmerchandise',
-                    image: 'buy-comics-merchandise'
+                    image:require('../assets/images/buy-comics-merchandise.png'),
                 },
                 {
                     name: 'Subscription',
                     url: '/subscription',
-                    image: 'buy-comics-subscriptions'
+                    image:require('../assets/images/buy-comics-subscriptions.png'),
                 },
                 {
                     name: 'Comic Shop Locator',
                     url: '/comicshoplocator',
-                    image: 'buy-comics-shop-locator'
+                    image:require('../assets/images/buy-comics-shop-locator.png'),
                 },
                 {
                     name: 'DC Power Visa',
                     url: '/dcpowervisa',
-                    image: 'buy-dc-power-visa'
+                    image:require('../assets/images/buy-dc-power-visa.svg'),
                 },
             ],
         }
@@ -74,7 +74,7 @@ li {
 }
 
 li img {
-    width: 35px;
+    width: 50px;
     color: #fff;
 }
 
