@@ -80,7 +80,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 header {
     max-width: 1200px;
     margin: 0 auto;
@@ -88,33 +88,33 @@ header {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-}
 
-img {
-    width: 75px;
-}
+    img {
+        width: 75px;
+    }
 
-ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
 
-li {
-    padding: 0 1rem;
-}
+        li {
+            padding: 0 1rem;
 
-li a {
-    padding: 42px 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: bold;
-}
+            a {
+                padding: 42px 0;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #000;
+                font-weight: bold;
 
-li a:hover,
-li a.active {
-    color: #0282f9;
-    border-bottom: 5px solid #0282f9;
+                &:hover,
+                &.active {
+                    color: #0282f9;
+                    border-bottom: 5px solid #0282f9;
+                }
+            }
+        }
+    }
 }
 </style>

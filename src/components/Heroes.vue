@@ -1,6 +1,8 @@
 <template>
     <div class="hero">
-        <img :src="hero.thumb" alt="">
+        <div class="image">
+            <img :src="hero.thumb" alt="">
+        </div>
         <div class="text">
             {{ hero.series }}
         </div>
@@ -14,16 +16,21 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .hero {
     flex-basis: calc(100% / 6);
     padding: 30px 0;
-}
 
-.text {
+    .image {
+    height: 200px;
+    overflow: hidden;
+    }
+
+    .text {
     padding-top: 15px;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
+    }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <section>
         <div class="jumbotron">
-            <img src="@/assets/images/jumbotron.jpg" alt="">
+            <img src="@/assets/images/jumbotron.jpg" alt="Jumbotron">
         </div>
         <div class="heroes">
             <div class="button current">
@@ -125,12 +125,7 @@ export default {
 }
 </script>
 
-<style scoped>
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
+<style scoped lang="scss">
 .jumbotron {
     height: 410px;
     overflow: hidden;
@@ -140,13 +135,8 @@ export default {
     position: relative;
     padding-top: 30px;
     background-color: #1c1c1c;
-}
 
-.box {
-    padding-bottom: 70px;
-}
-
-.button {
+    .button {
     display: inline-block;
     background: #0282f9;
     color: #fff;
@@ -154,24 +144,31 @@ export default {
     padding: 15px;
     cursor: pointer;
     position: absolute;
-}
 
-.current {
+    &.current {
     top: -30px;
     left: 340px;
     font-size: 28px;
-}
+    }
 
-.load {
+    &.load {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     min-width: 250px;
     text-align: center;
-}
+    }
+    }
 
-.box {
-    display: flex;
-    flex-wrap: wrap;
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+
+        .box {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 70px;
+        }
+    }
 }
 </style>

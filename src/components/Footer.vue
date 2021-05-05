@@ -188,11 +188,7 @@ export default {
 }
 </script>
 
-<style scoped>
-.footer-top {
-    background-image: url(../assets/images/footer-bg.jpg);
-}
-
+<style scoped lang="scss">
 .container {
     display: flex;
     justify-content: space-between;
@@ -202,45 +198,53 @@ export default {
     overflow: hidden;
 }
 
-.links {
-    display: flex;
-}
+.footer-top {
+    background-image: url(../assets/images/footer-bg.jpg);
 
-.logo {
-    height: 280px;
-}
+    .links {
+        display: flex;
 
-.logo img {
-    transform: translateY(-127px)
-}
+        .m-right {
+            margin-right: 2rem;
 
-.m-right {
-    margin-right: 2rem;
+            ul {
+                padding: 1rem 0;
+                ist-style: none;
+
+                li a {
+                    text-decoration: none;
+                    color: #959595;
+                    line-height: 22px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .logo {
+        height: 280px;
+
+        img {
+        transform: translateY(-127px)
+        }
+    }
 }
 
 h2 {
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
-}
 
-ul {
-    padding: 1rem 0;
-    list-style: none;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #959595;
-    line-height: 22px;
-    font-size: 14px;
+    &.blue {
+        color: #0282f9;
+        margin-right: 20px;
+    }
 }
 
 .footer-bottom {
-    background-color: #303030
-}
+    background-color: #303030;
 
-.button {
+    .button {
     border: 3px solid #0282f9;
     color: #fff;
     text-transform: uppercase;
@@ -248,20 +252,16 @@ ul li a {
     height: 55px;
     padding: 15px;
     cursor: pointer;
-}
+    }
 
-.blue {
-    color: #0282f9;
-    margin-right: 20px;
-}
-
-.social {
+    .social {
     display: flex;
     align-items: center;
-}
+    }
 
-.footer-bottom img {
+    img {
     padding: 10px;
     cursor: pointer;
+    }
 }
 </style>

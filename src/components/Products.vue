@@ -51,38 +51,38 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 section {
-    background-color: #0282f9
-}
+    background-color: #0282f9;
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
+    .container {
+        width: 1200px;
+        margin: 0 auto;
 
-ul {
-    display: flex;
-    justify-content: center;
-}
+        ul {
+            display: flex;
+            justify-content: center;
 
-li {
-    display: flex;
-    align-items: center;
-    padding: 3rem;
-    list-style: none;
-}
+            li {
+                display: flex;
+                align-items: center;
+                padding: 3rem;
+                list-style: none;
 
-li img {
-    width: 50px;
-    color: #fff;
-}
+                img {
+                    width: 50px;
+                    color: #fff;
+                }
 
-li a {
-    padding-left: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 12px;
+                a {
+                    padding-left: 10px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
 </style>
